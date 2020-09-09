@@ -26,15 +26,15 @@
         L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
 	        attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map)
         
-        // L.marker([35.911381, -79.051198]).addTo(map)
-        //     .bindPopup("Meet me at Meantime Coffee Co.!")
-        //     .openPopup();
-        // L.marker([35.909747, -79.049045]).addTo(map)
-        //     .bindPopup("I am studying in the UL!")
-        //     .openPopup();
-        // L.marker([35.910542,-79.050349]).addTo(map)
-        //     .bindPopup("<b>I am napping on the quad.</b><br>Come join me before my next class!")
-        //     .openPopup();
+        L.marker([35.911381, -79.051198]).addTo(map)
+             .bindPopup("Meet me at Meantime Coffee Co.!")
+             .openPopup();
+        L.marker([35.909747, -79.049045]).addTo(map)
+             .bindPopup("I am studying in the UL!")
+             .openPopup();
+        L.marker([35.910542,-79.050349]).addTo(map)
+             .bindPopup("<b>I am napping on the quad.</b><br>Come join me before my next class!")
+             .openPopup();
 
        var meantimeIcon = L.icon({
            iconUrl: 'https://socialinnovation.unc.edu/files/2015/02/Mean-Time-51-copy.png',
