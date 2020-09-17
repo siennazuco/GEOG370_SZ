@@ -33,9 +33,9 @@
 
       var shopping = L.marker ([38.538645,-75.056879]);
       
-      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      var ESRI = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 	      maxZoom: 19,
-	      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
       }).addTo(map);
 
       var bethany = L.tileLayer('./Bethany%20PNGs/{z}/{x}/{y}.png', {
@@ -46,7 +46,7 @@
       }).addTo(map);
 
       var tiles = {
-        "Open Street Map": OSM,
+        "ESRI": ESRI,
         "Bethany Beach Photo": bethany,
       }
 
